@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to Swa-Abhyas</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <div id="main">
+
+    <header class="header">
+      <h1 class="title">Welcome to Swa-Abhyas Library</h1>
+      <p class="subtitle">A place to inspire learning and growth</p>
+    </header>
+
+    <section class="content">
+      <div class="image">
+        <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?q=80&w=2128&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Library">
+      </div>
+      <div class="info">
+        <h2>Why Visit Us?</h2>
+        <p>Explore a serene space with a vast collection of books, comfortable seating, and a supportive study
+          environment.</p>
+      </div>
+    </section>
+
+    <section class="features">
+      <h2 class="features-title">Facilities in our library</h2>
+      <div class="features-list">
+        <div class="feature">
+          <i class="ri-notification-off-line"></i>
+          <p>Silence</p>
+        </div>
+        <div class="feature">
+          <i class="ri-wifi-fill"></i>
+          <p>Free Wi-Fi</p>
+        </div>
+        <div class="feature">
+          <i class="ri-drop-line"></i>
+          <p>Free Water</p>
+        </div>
+        <div class="feature">
+          <i class="ri-windy-fill"></i>
+          <p>Fresh Air</p>
+        </div>
+        <div class="feature">
+          <i class="ri-cup-fill"></i>
+          <p>Coffee</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="carousel scrolling-section">
+      <h2 class="carousel-title">Explore Our Library</h2>
+      <div class="carousel-container scrolling-content">
+        <!-- Insert from javascript -->
+
+        <!-- Insert from javascript -->
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>Join us today and experience the joy of learning!</p>
+      <a href="https://maps.app.goo.gl/qB6xAqg7euEKRsvd8" target="_blank" rel="noopener">
+
+        <button class="cta-button">Explore More</button>
+      </a>
+
+      <div class="contact-info">
+        <h3>Contact Us</h3>
+        <ul>
+          <li>
+            <!-- <i class="ri-map-pin-line"></i>
+            <a href="https://www.google.com/maps/place/Your+Library+Location" target="_blank" rel="noopener">
+              Library Location on Google Maps
+            </a> -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783701.163321778!2d73.68840049157853!3d22.163285323068145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3981b100055bbb17%3A0xa887df5bb8e35209!2sSwaabhyas%20library!5e0!3m2!1sen!2sin!4v1732972226778!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </li>
+          <li>
+            <i class="ri-mail-line"></i>
+            <a href="mailto:library@example.com">library@example.com</a>
+          </li>
+          <li>
+            <i class="ri-phone-line"></i>
+            <a href="tel:+1234567890">+910000000000</a>
+          </li>
+        </ul>
+      </div>
+      <div style="padding-top: 30px;">
+        <p style="text-align: center; font-size: 14px; color: #999696;">Designed and Developed by <strong>Rajdeep Tiwari</strong></p>
+      </div>
+    </footer>
+
+  </div>
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <!-- <span class="close" onclick="closeModal()">&times;</span> -->
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modal-image">
+    <div id="modal-caption"></div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js" integrity="sha512-v8B8T8l8JiiJRGomPd2k+bPS98RWBLGChFMJbK1hmHiDHYq0EjdQl20LyWeIs+MGRLTWBycJGEGAjKkEtd7w5Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.6.1/jquery.lettering.min.js" integrity="sha512-VJ/iYbiu1eJ6yLimfTi65t2R9TFcG5D9X8ZCfbbEFhTfPnKJh8byoKXEawi5ScJZBYL1eiirL1+MczZDx0Tz9Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/textillate/0.4.0/jquery.textillate.min.js" integrity="sha512-0bHMhYsdpiur1bT84kDH4D7cpxFQ9O7uA5yxVAqWC87h552Xt0swX4M+ZlXMKE8oPVRIJ5lAwXWO2UWeDwJJOw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script type="module" src="script.js"></script>
+  <!-- <script src="script.js"></script> -->
+</body>
+
+</html>
