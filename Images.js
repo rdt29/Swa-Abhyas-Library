@@ -28,6 +28,7 @@ export const imageSources = [
     { src: "./Images/Library(29).jpg", desc: "Library with a View" },
     { src: "./Images/Library(30).jpg", desc: "Modern and Sleek Interior" },
     { src: "./Images/Library(31).jpg", desc: "Library with a Contemporary Touch" },
-    { src: "./Images/Library(32).jpg", desc: "Large Open Spaces for Reading" }
+    { src: "./Images/Library(32).jpg", desc: "Large Open Spaces for Reading" },
+    { src: "./Images/Logo.png", desc: "Swa-Abhyas" }
   ];
   
