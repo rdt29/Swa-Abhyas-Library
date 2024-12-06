@@ -1,5 +1,5 @@
 export const imageSources = [
-    { src: "./Images/Library(3).jpg", desc: "Explore Snakes." },
+    { src: "./Images/Library(3).jpg", desc: "Explore Snacks." },
     { src: "./Images/Library(4).jpg", desc: "Explore the wonders of space in our Cafeteria" },
     { src: "./Images/Library(6).jpg", desc: "Space vibes to elevate your cafeteria visit" },
     { src: "./Images/Library(8).jpg", desc: "Take a break and explore the beauty of space" },
@@ -17,7 +17,7 @@ export const imageSources = [
     { src: "./Images/Library(26).jpg", desc: "Stay updated with the latest news and trends" },
     { src: "./Images/Library(27).jpg", desc: "Enjoy a Fresh air, with our air purifier. 🌿💧" },
     { src: "./Images/Library(28).jpg", desc: "Relax and breathe easy with our air diffuser. 🌬️💧" },
-    { src: "./Images/Library(30).jpg", desc: "Modern and Sleek Interior" },
+    { src: "./Images/Library(30).jpg", desc: "Online Mock Exams Setup" },
     { src: "./Images/Library(31).jpg", desc: "Fuel your day with a perfect cup from our coffee machine. ☕✨" },
     { src: "./Images/Library(32).jpg", desc: "Freshly brewed coffee. ☕😊" },
     { src: "./Images/Logo.png", desc: "Swa-Abhyas" }
