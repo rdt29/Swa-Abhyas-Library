@@ -34,4 +34,4 @@ Whether you're a high school student, university learner, or a lifelong educatio
 📧 Email: [swaabhyas4success@gmail.com]  
 📞 Phone: [+91 9516366055]  
 
-Come study with us, expand your knowledge, and be part of a thriving community. Let's learn, grow, and succeed together!  
+Come study with us, expand your knowledge, and be part of a thriving community. Let's learn, grow, and succeed together!  .
