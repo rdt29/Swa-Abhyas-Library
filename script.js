@@ -483,29 +483,30 @@ if (contactForm) {
     const message = document.getElementById("cf-message").value.trim();
 
     if (!name || !email || !message) {
-      formStatus.textContent =
-        "Please fill in all fields before sending.";
+      formStatus.textContent = "Please fill in all fields before sending.";
       return;
     }
 
-    const subject = encodeURIComponent(
-      `Enquiry from ${name}`
-    );
-
+    const subject = encodeURIComponent(`Enquiry from ${name}`);
     const body = encodeURIComponent(
-`Name: ${name}
+      `Name: ${name}
 
-Email: ${email}
+            Email: ${email}
 
-Message:
-${message}`
+            Message:
+            ${message}
+
+            ----------------------------------------
+
+            This enquiry was submitted through the Swa Abhyas Library website.
+
+            Website: ${window.location.origin}
+`,
     );
 
-    window.location.href =
-      `mailto:swaabhyas4success@gmail.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:swaabhyas4success@gmail.com?subject=${subject}&body=${body}`;
 
-    formStatus.textContent =
-      "Opening your email application...";
+    formStatus.textContent = "Opening your email application...";
 
     contactForm.reset();
   });
@@ -523,8 +524,7 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 
     e.preventDefault();
 
-    const navHeight =
-      document.getElementById("siteNav").offsetHeight;
+    const navHeight = document.getElementById("siteNav").offsetHeight;
 
     window.scrollTo({
       top: target.offsetTop - navHeight,
