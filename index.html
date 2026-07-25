@@ -4,18 +4,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Swa-Abhyas</title>
+  <title>Swa-Abhyas Library — Premium Study Space in Jabalpur (MP)</title>
+  <meta name="description" content="Swa-Abhyas Library is a modern, quiet study space in Jabalpur (MP) offering silent seating, free Wi-Fi, memberships, and a distraction-free environment for focused learning.">
+  <meta name="theme-color" content="#101B33">
+  <meta property="og:title" content="Swa-Abhyas Library — Premium Study Space in Jabalpur (MP)">
+  <meta property="og:description" content="A calm, well-equipped reading room built for real hours of deep work.">
+  <meta property="og:type" content="website">
   <link rel="icon" type="image/x-icon" href="./Images/Logo.png">
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Yuji+Mai&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Yuji+Mai&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   
   <!-- Vercel Web Analytics -->
@@ -24,131 +24,416 @@
 
 <body>
 
-  <div id="main">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 
-    <header class="header">
-      <div class="headerContent">
-        <div class="logo">
-          <img src="./Images/Logo.png" alt="Library Logo" class="library-logo" />
+  <header class="nav" id="siteNav">
+    <div class="nav__inner">
+      <a href="#hero" class="nav__brand">
+        <img src="./Images/Logo.png" alt="" class="nav__logo">
+        <span>Swa-Abhyas</span>
+      </a>
+
+      <nav aria-label="Primary navigation" class="nav__nav">
+        <ul class="nav__links" id="navLinks">
+          <li><a href="#about" data-nav>About</a></li>
+          <li><a href="#services" data-nav>Services</a></li>
+          <li><a href="#facilities" data-nav>Facilities</a></li>
+          <li><a href="#membership" data-nav>Membership</a></li>
+          <li><a href="#events" data-nav>Events</a></li>
+          <li><a href="#gallery" data-nav>Gallery</a></li>
+          <li><a href="#testimonials" data-nav>Testimonials</a></li>
+          <li><a href="#faq" data-nav>FAQ</a></li>
+          <li><a href="#contact" data-nav>Contact</a></li>
+        </ul>
+      </nav>
+
+      <a href="#contact" class="btn btn--primary btn--sm nav__cta">Visit Us</a>
+
+      <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero__mesh" aria-hidden="true"></div>
+      <div class="hero__inner">
+        <div class="hero__content reveal">
+          <p class="eyebrow">Study Library · Jabalpur (MP)</p>
+          <h1 class="hero__title">Focus finds you here.</h1>
+          <p class="hero__lead">A calm, well-equipped reading room built for students who need real hours of deep work — silent seating, dependable Wi-Fi, and a room that stays out of your way.</p>
+          <div class="hero__actions">
+            <a href="#membership" class="btn btn--primary">Book a Seat</a>
+            <a href="#facilities" class="btn btn--ghost">Explore Facilities</a>
+          </div>
+          <div class="hero__stats" role="list">
+            <div class="stat" role="listitem">
+              <span class="stat__num" data-count="60">0</span>
+              <span class="stat__label">Study Seats</span>
+            </div>
+            <div class="stat" role="listitem">
+              <span class="stat__num" data-count="12">0</span>
+              <span class="stat__label">Hours Open Daily</span>
+            </div>
+            <div class="stat" role="listitem">
+              <span class="stat__num" data-count="500">0</span>
+              <span class="stat__label">Students Hosted</span>
+            </div>
+          </div>
+          <!-- Sample figures — replace with your library's real numbers -->
         </div>
 
-        <div class="headerTitle">
-          <h1 class="title">Welcome to Swa-Abhyas Library</h1>
-          <p class="subtitle">A place to inspire learning and growth</p>
-
+        <div class="hero__visual reveal">
+          <img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?q=80&w=1200&auto=format&fit=crop" srcset="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?q=80&w=600&auto=format&fit=crop 600w,
+                  https://images.unsplash.com/photo-1521587760476-6c12a4b040da?q=80&w=1200&auto=format&fit=crop 1200w" sizes="(max-width: 900px) 90vw, 480px" alt="Students seated at long tables in a quiet reading room" class="hero__img" loading="eager" width="1200" height="1400">
+          <div class="hero__floating card glass">
+            <i class="ri-wifi-fill" aria-hidden="true"></i>
+            <p>Free High-Speed Wi-Fi</p>
+          </div>
         </div>
-
-      </div>
-    </header>
-
-    <section class="content">
-      <div class="image">
-        <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?q=80&w=2128&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Library">
-      </div>
-      <div class="info">
-        <h2>Why Visit Us?</h2>
-        <p>Experience a serene space designed for students to focus and excel, with comfortable seating and a supportive study environment—perfect for independent learning.</p>
       </div>
     </section>
 
-    <section class="features">
-      <h2 class="features-title">Facilities in our library</h2>
-      <div class="features-list">
-        <div class="feature">
-          <i class="ri-notification-off-line"></i>
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="section__head reveal">
+        <p class="eyebrow">About the library</p>
+        <h2>Built for deep, uninterrupted focus</h2>
+      </div>
+
+      <div class="about__grid">
+        <div class="about__image reveal">
+          <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?q=80&w=900&auto=format&fit=crop" alt="Rows of bookshelves inside a calm reading library" loading="lazy" width="900" height="1100">
+        </div>
+        <div class="about__body reveal">
+          <p>Swa-Abhyas is a serene reading room designed around one job: helping students concentrate. Comfortable seating, steady lighting, and a house rule of silence make it a dependable place to put in the hours — every single day.</p>
+          <ul class="checklist">
+            <li><i class="ri-check-line" aria-hidden="true"></i> Dedicated silent study zones</li>
+            <li><i class="ri-check-line" aria-hidden="true"></i> Individual reading lamps at every seat</li>
+            <li><i class="ri-check-line" aria-hidden="true"></i> Clean, well-ventilated interiors</li>
+            <li><i class="ri-check-line" aria-hidden="true"></i> Open early to late, seven days a week</li>
+          </ul>
+          <a href="#contact" class="link-arrow">Plan a visit <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section section--muted">
+      <div class="section__head reveal">
+        <p class="eyebrow">What we offer</p>
+        <h2>Services built around how you study</h2>
+      </div>
+      <div class="grid grid--4">
+        <article class="card glass hover-lift reveal">
+          <div class="card__icon"><i class="ri-time-line" aria-hidden="true"></i></div>
+          <h3>Daily Study Pass</h3>
+          <p>Drop in for a single day whenever you need an extra push before an exam.</p>
+        </article>
+        <article class="card glass hover-lift reveal">
+          <div class="card__icon"><i class="ri-calendar-check-line" aria-hidden="true"></i></div>
+          <h3>Long-Term Membership</h3>
+          <p>Reserve a fixed seat for the month and build a steady, distraction-free routine.</p>
+        </article>
+        <article class="card glass hover-lift reveal">
+          <div class="card__icon"><i class="ri-group-line" aria-hidden="true"></i></div>
+          <h3>Group Discussion Table</h3>
+          <p>A separate table for group revision and doubt-solving that won't disturb silent seating.</p>
+        </article>
+        <article class="card glass hover-lift reveal">
+          <div class="card__icon"><i class="ri-lock-2-line" aria-hidden="true"></i></div>
+          <h3>Personal Locker</h3>
+          <p>Secure storage for your books and belongings, included with every membership.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- BOOK CATEGORIES -->
+    <section id="categories" class="section">
+      <div class="section__head reveal">
+        <p class="eyebrow">Reading material</p>
+        <h2>Something for every kind of reader</h2>
+      </div>
+      <div class="grid grid--4">
+        <article class="category-card hover-lift reveal">
+          <i class="ri-graduation-cap-line" aria-hidden="true"></i>
+          <h3>Competitive Exams</h3>
+          <p>Reference sets for UPSC, GPSC, banking, and other entrance exams.</p>
+        </article>
+        <article class="category-card hover-lift reveal">
+          <i class="ri-book-2-line" aria-hidden="true"></i>
+          <h3>Academic &amp; Reference</h3>
+          <p>School and college textbooks alongside subject reference guides.</p>
+        </article>
+        <article class="category-card hover-lift reveal">
+          <i class="ri-book-open-line" aria-hidden="true"></i>
+          <h3>Fiction &amp; Literature</h3>
+          <p>A shelf of novels and literature for reading breaks between study blocks.</p>
+        </article>
+        <article class="category-card hover-lift reveal">
+          <i class="ri-newspaper-line" aria-hidden="true"></i>
+          <h3>Newspapers &amp; Magazines</h3>
+          <p>Daily papers and current-affairs magazines, refreshed every morning.</p>
+        </article>
+      </div>
+      <!-- <p class="section__note">Categories shown are illustrative — ask us about the current collection.</p> -->
+    </section>
+
+    <!-- FACILITIES -->
+    <section id="facilities" class="section section--dark">
+      <div class="section__head reveal">
+        <p class="eyebrow eyebrow--on-dark">On-site facilities</p>
+        <h2>Everything a focused session needs</h2>
+      </div>
+      <div class="grid grid--5">
+        <div class="facility hover-lift reveal">
+          <i class="ri-notification-off-line" aria-hidden="true"></i>
           <p>Silence</p>
         </div>
-        <div class="feature">
-          <i class="ri-wifi-fill"></i>
+        <div class="facility hover-lift reveal">
+          <i class="ri-wifi-fill" aria-hidden="true"></i>
           <p>Free Wi-Fi</p>
         </div>
-        <div class="feature">
-          <i class="ri-drop-line"></i>
+        <div class="facility hover-lift reveal">
+          <i class="ri-drop-line" aria-hidden="true"></i>
           <p>Free Water</p>
         </div>
-        <div class="feature">
-          <i class="ri-windy-fill"></i>
+        <div class="facility hover-lift reveal">
+          <i class="ri-windy-fill" aria-hidden="true"></i>
           <p>Fresh Air</p>
         </div>
-        <div class="feature">
-          <i class="ri-cup-fill"></i>
+        <div class="facility hover-lift reveal">
+          <i class="ri-cup-fill" aria-hidden="true"></i>
           <p>Coffee</p>
         </div>
       </div>
     </section>
 
-    <section class="carousel scrolling-section">
-      <h2 class="carousel-title">Explore Our Library</h2>
-      <div class="carousel-container scrolling-content">
-        <!-- Insert from javascript -->
+    <!-- MEMBERSHIP -->
+    <section id="membership" class="section">
+      <div class="section__head reveal">
+        <p class="eyebrow">Membership</p>
+        <h2>Choose a plan that fits your routine</h2>
+      </div>
+      <div class="grid grid--3">
+        <article class="plan hover-lift reveal">
+          <h3>Daily</h3>
+          <p class="plan__desc">For one-off exam pushes.</p>
+          <ul>
+            <li><i class="ri-check-line" aria-hidden="true"></i> Any open seat</li>
+            <li><i class="ri-check-line" aria-hidden="true"></i> Full-day access</li>
+            <li><i class="ri-check-line" aria-hidden="true"></i> Wi-Fi &amp; water included</li>
+          </ul>
+          <a href="#contact" class="btn btn--ghost btn--block">Contact for pricing</a>
+        </article>
+        <article class="plan plan--featured hover-lift reveal">
+          <span class="plan__badge">Most popular</span>
+          <h3>Monthly</h3>
+          <p class="plan__desc">For a steady, dedicated routine.</p>
+          <ul>
+            <li><i class="ri-check-line" aria-hidden="true"></i> Reserved fixed seat</li>
+            <li><i class="ri-check-line" aria-hidden="true"></i> Personal locker</li>
+            <li><i class="ri-check-line" aria-hidden="true"></i> Wi-Fi, water &amp; coffee</li>
+          </ul>
+          <a href="#contact" class="btn btn--primary btn--block">Contact for pricing</a>
+        </article>
+        <article class="plan hover-lift reveal">
+          <h3>Quarterly</h3>
+          <p class="plan__desc">Best value for long-term prep.</p>
+          <ul>
+            <li><i class="ri-check-line" aria-hidden="true"></i> Reserved fixed seat</li>
+            <li><i class="ri-check-line" aria-hidden="true"></i> Personal locker</li>
+            <li><i class="ri-check-line" aria-hidden="true"></i> Priority group table access</li>
+          </ul>
+          <a href="#contact" class="btn btn--ghost btn--block">Contact for pricing</a>
+        </article>
+      </div>
+      <!-- <p class="section__note">Plan names shown as a starting template — replace with your actual pricing.</p> -->
+    </section>
 
-        <!-- Insert from javascript -->
+    <!-- EVENTS -->
+    <section id="events" class="section section--muted">
+      <div class="section__head reveal">
+        <p class="eyebrow">Community</p>
+        <h2>Upcoming at Swa-Abhyas</h2>
+      </div>
+      <div class="grid grid--3">
+        <article class="event-card hover-lift reveal">
+          <span class="event-card__tag">Every Sunday</span>
+          <h3>Mock Test Session</h3>
+          <p>A timed, silent mock-test slot open to all members preparing for competitive exams.</p>
+        </article>
+        <article class="event-card hover-lift reveal">
+          <span class="event-card__tag">Weekly</span>
+          <h3>Doubt-Clearing Circle</h3>
+          <p>An informal group table where members compare notes and work through tough topics together.</p>
+        </article>
+        <article class="event-card hover-lift reveal">
+          <span class="event-card__tag">Monthly</span>
+          <h3>New Member Orientation</h3>
+          <p>A short walkthrough of the space, seating, and house rules for anyone joining that month.</p>
+        </article>
+      </div>
+      <!-- <p class="section__note">Sample schedule — confirm current dates with the front desk.</p> -->
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="section">
+      <div class="section__head reveal">
+        <p class="eyebrow">Take a look inside</p>
+        <h2>Explore our library</h2>
+      </div>
+      <div class="gallery" id="galleryGrid" aria-label="Library photo gallery"></div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="section section--dark">
+      <div class="section__head reveal">
+        <p class="eyebrow eyebrow--on-dark">Google Reviews</p>
+        <h2>What Our Students Say</h2>
+        <p class="section__note section__note--on-dark">
+          ⭐ Rated 4.9+ by 100+ Students on Google
+        </p>
+      </div>
+
+      <div class="reviews-slider">
+        <button class="review-nav prev" aria-label="Previous">
+          <i class="ri-arrow-left-s-line"></i>
+        </button>
+
+        <div class="reviews-track" id="testimonials-container">
+          <!-- Google Reviews will be injected here -->
+        </div>
+
+        <button class="review-nav next" aria-label="Next">
+          <i class="ri-arrow-right-s-line"></i>
+        </button>
+      </div>
+
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section">
+      <div class="section__head reveal">
+        <p class="eyebrow">Good to know</p>
+        <h2>Frequently asked questions</h2>
+      </div>
+      <div class="faq reveal">
+        <details class="faq__item">
+          <summary>What are your opening hours?</summary>
+          <p>We're open daily — see the exact timings posted at the library or confirm by phone.</p>
+        </details>
+        <details class="faq__item">
+          <summary>Is the library really silent?</summary>
+          <p>Yes. Silence is a house rule in the main reading area; the group discussion table is available for anyone who needs to talk through a topic.</p>
+        </details>
+        <details class="faq__item">
+          <summary>Do you offer a trial day?</summary>
+          <p>Yes, a daily pass lets you try the space before committing to a monthly or quarterly membership.</p>
+        </details>
+        <details class="faq__item">
+          <summary>Is Wi-Fi available for all members?</summary>
+          <p>Yes, free Wi-Fi is included with every pass and membership.</p>
+        </details>
+        <details class="faq__item">
+          <summary>How do I pay for a membership?</summary>
+          <p>Reach out through the contact section below and our team will walk you through current plans and payment options.</p>
+        </details>
       </div>
     </section>
 
-    <footer class="footer">
-      <p>Join us today and experience the joy of learning!</p>
-      <a href="https://maps.app.goo.gl/qB6xAqg7euEKRsvd8" target="_blank" rel="noopener">
+    <!-- CONTACT -->
+    <section id="contact" class="section section--muted">
+      <div class="section__head reveal">
+        <p class="eyebrow">Get in touch</p>
+        <h2>Ready when you are</h2>
+      </div>
+      <div class="contact__grid">
+        <div class="contact__map card reveal">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783701.163321778!2d73.68840049157853!3d22.163285323068145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3981b100055bbb17%3A0xa887df5bb8e35209!2sSwaabhyas%20library!5e0!3m2!1sen!2sin!4v1732972226778!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Swa-Abhyas Library location on Google Maps"></iframe>
+        </div>
 
-        <button class="cta-button">Explore More</button>
-      </a>
+        <div class="contact__details reveal">
+          <ul class="contact-list">
+            <li>
+              <i class="ri-mail-line" aria-hidden="true"></i>
+              <a href="mailto:swaabhyas4success@gmail.com">swaabhyas4success@gmail.com</a>
+            </li>
+            <li>
+              <i class="ri-phone-line" aria-hidden="true"></i>
+              <a href="tel:+919516366055">+91 9516366055</a>
+            </li>
+            <li>
+              <i class="ri-map-pin-line" aria-hidden="true"></i>
+              <a href="https://maps.app.goo.gl/qB6xAqg7euEKRsvd8" target="_blank" rel="noopener">Get directions</a>
+            </li>
+          </ul>
 
-      <div class="contact-info">
-        <h3>Contact Us</h3>
-        <ul>
-          <li>
-            <!-- <i class="ri-map-pin-line"></i>
-            <a href="https://www.google.com/maps/place/Your+Library+Location" target="_blank" rel="noopener">
-              Library Location on Google Maps
-            </a> -->
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783701.163321778!2d73.68840049157853!3d22.163285323068145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3981b100055bbb17%3A0xa887df5bb8e35209!2sSwaabhyas%20library!5e0!3m2!1sen!2sin!4v1732972226778!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </li>
-          <li>
-            <i class="ri-mail-line"></i>
-            <a href="mailto:swaabhyas4success@gmail.com">swaabhyas4success@gmail.com</a>
-          </li>
-          <li>
-            <i class="ri-phone-line"></i>
-            <a href="tel:+919516366055">+91 9516366055</a>
-          </li>
-        </ul>
-        <div class="social-links">
-          <a href="https://www.instagram.com/swa_abhyas?igsh=MXRzZGNsZTJlYW5udw==" target="_blank" aria-label="Instagram">
-            <i class="ri-instagram-line social-icon"></i>
-          </a>
-          <!-- <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
-            <i class="ri-facebook-fill social-icon"></i>
-          </a> -->
-          <a href="https://youtube.com/@swa-abhyaslibrary?si=B7v7l4-NcIvd43St" target="_blank" aria-label="YouTube">
-            <i class="ri-youtube-fill social-icon"></i>
-          </a>
-          <a href="https://maps.app.goo.gl/qB6xAqg7euEKRsvd8" target="_blank" aria-label="Map">
-            <i class="ri-map-pin-line"></i>
-          </a>
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-row">
+              <label for="cf-name">Name</label>
+              <input type="text" id="cf-name" name="name" required autocomplete="name">
+            </div>
+            <div class="form-row">
+              <label for="cf-email">Email</label>
+              <input type="email" id="cf-email" name="email" required autocomplete="email">
+            </div>
+            <div class="form-row">
+              <label for="cf-message">Message</label>
+              <textarea id="cf-message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--block">Send message</button>
+            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+          </form>
+          <!-- Static-site note: this form opens the visitor's email app via mailto.
+             Connect it to a form backend (e.g. Formspree) for direct submissions. -->
         </div>
       </div>
-      <div style="padding: 30px 0 1px 0;">
-        <p style="text-align: center; font-size: 14px; color: #999696;">&#169; Designed and Developed by <strong>Rajdeep Tiwari</strong></p>
+
+      <div class="social-links">
+        <a href="https://www.instagram.com/swa_abhyas?igsh=MXRzZGNsZTJlYW5udw==" target="_blank" rel="noopener" aria-label="Instagram">
+          <i class="ri-instagram-line" aria-hidden="true"></i>
+        </a>
+        <a href="https://youtube.com/@swa-abhyaslibrary?si=B7v7l4-NcIvd43St" target="_blank" rel="noopener" aria-label="YouTube">
+          <i class="ri-youtube-fill" aria-hidden="true"></i>
+        </a>
+        <a href="https://maps.app.goo.gl/qB6xAqg7euEKRsvd8" target="_blank" rel="noopener" aria-label="Map">
+          <i class="ri-map-pin-line" aria-hidden="true"></i>
+        </a>
       </div>
-    </footer>
+    </section>
 
-  </div>
-  <!-- Modal -->
-  <div id="modal" class="modal">
-    <!-- <span class="close" onclick="closeModal()">&times;</span> -->
-    <span class="close">&times;</span>
-    <img class="modal-content" id="modal-image">
-    <div id="modal-caption"></div>
-  </div>
+  </main>
 
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <img src="./Images/Logo.png" alt="" class="footer__logo">
+        <p>Swa-Abhyas Library — a quiet room to do the work.</p>
+      </div>
+      <nav aria-label="Footer navigation" class="footer__links">
+        <a href="#about">About</a>
+        <a href="#membership">Membership</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+    <div class="footer__credit">
+      <p>&#169; <span id="year"></span> Swa-Abhyas Library. Designed and developed by <strong>Rajdeep Tiwari</strong>.</p>
+    </div>
+  </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+  <!-- Lightbox -->
+  <dialog id="lightbox" class="lightbox" aria-label="Image preview">
+    <button type="button" id="lightboxClose" class="lightbox__close" aria-label="Close image preview">&times;</button>
+    <img id="lightboxImage" alt="">
+    <p id="lightboxCaption" class="lightbox__caption"></p>
+  </dialog>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js" integrity="sha512-v8B8T8l8JiiJRGomPd2k+bPS98RWBLGChFMJbK1hmHiDHYq0EjdQl20LyWeIs+MGRLTWBycJGEGAjKkEtd7w5Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.6.1/jquery.lettering.min.js" integrity="sha512-VJ/iYbiu1eJ6yLimfTi65t2R9TFcG5D9X8ZCfbbEFhTfPnKJh8byoKXEawi5ScJZBYL1eiirL1+MczZDx0Tz9Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/textillate/0.4.0/jquery.textillate.min.js" integrity="sha512-0bHMhYsdpiur1bT84kDH4D7cpxFQ9O7uA5yxVAqWC87h552Xt0swX4M+ZlXMKE8oPVRIJ5lAwXWO2UWeDwJJOw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script type="module" src="script.js"></script>
 </body>
 
